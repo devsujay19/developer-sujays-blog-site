@@ -2,17 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=JetBrains+Mono:wght@600;700;800&family=Orbitron:wght@400;500&display=swap');
+
+::selection {
+  background-color: #1fff9e4f;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --foreground-rgb: #000000;
+  --background-start-rgb: #ffffff;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: #181818;
+    --background-end-rgb: #000000;
   }
 }
 
@@ -21,9 +32,10 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      var(--background-end-rgb)
     )
-    rgb(var(--background-start-rgb));
+    var(--background-start-rgb);
+    scroll-behavior: smooth;
 }
 
 @layer utilities {

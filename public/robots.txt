@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://developer-sujays-blog-site.vercel.app
+
+# Sitemaps
+Sitemap: https://developer-sujays-blog-site.vercel.app/sitemap.xml
